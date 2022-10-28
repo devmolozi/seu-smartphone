@@ -1,0 +1,25 @@
+.modelo img{
+    margin-top: 10px;
+    width: 40px;
+}
+
+#iphones{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.modelo{
+    padding: 10px 50px ;
+    justify-content: space-around;
+}
+
+.modelo h2{
+    color: black;
+}
+
+.modelo h2:hover{
+    transition: 0.4s;
+    color: #0071e3;
+}

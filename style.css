@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -41,49 +42,37 @@ section{
     margin-top: 15px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: space-around;
     display: flex;
 }
 
-/*.produto{
-    box-shadow: rgba(53, 48, 48, 0.575) 0px 5px 15px;
-    margin-bottom: 10px;
-    width: 220px;
-    max-width: 250px ;
-    color: rgb(0, 0, 0);
-    border-radius: 15px 15px 15px 15px;
-    padding: 5px;
-    background-color: #ffffff;
-    margin: 5px;
-    flex-wrap: wrap;
-}
-*/
+
 
 .produto{
-    
+    align-items: center;
     margin-bottom: 10px;
     width: 220px;
     max-width: 250px ;
     color: rgb(0, 0, 0);
     border-radius: 15px 15px 15px 15px;
     padding: 5px;
-
+    justify-content: center;
     margin: 5px;
     flex-wrap: wrap;
 }
 
 
 .produto img{
+    padding: 0;
+    margin: 0;
+    text-align: center;
     object-fit: contain;
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
 }
 
-.produto img:hover{
-    transform: 0.5s;
- 
 
-}
 
 
 .produto p{
@@ -166,3 +155,74 @@ section{
 body{
     background-color: #fff;
 }
+
+.logoo img, span, a{
+    cursor: pointer;
+}
+
+#container3{
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  
+}
+
+#outros{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+#acessorios-celular{
+    align-items: center;
+    text-align: center;
+}
+
+#acessorios-celular img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+#acessorios-celular p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#perifericos-computador{
+    align-items: center;
+    text-align: center;
+}
+
+#perifericos-computador img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+#perifericos-computador p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/*FRMATACAO PRODUTOS*/
+
+.preco{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.preco p{
+    padding: 5px;
+}
+
+.risco{
+    font-size: 10px;
+    color: red;
+    text-decoration: line-through;
+}
+
+
+
