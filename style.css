@@ -40,7 +40,6 @@ section{
 
 #produtos{
     margin-top: 15px;
-    margin-bottom: 50px;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
@@ -65,8 +64,6 @@ section{
 
 .produto img{
     padding: 0;
-    margin: 0;
-    text-align: center;
     object-fit: contain;
     width: 240px;
     height: 240px;
@@ -173,6 +170,16 @@ body{
     justify-content: space-around;
 }
 
+#outros img:hover{
+    transition: 0.3s;
+    border: 5px solid #0071e3c9;
+}
+
+#outros p{
+    padding: 15px;
+}
+
+
 #acessorios-celular{
     align-items: center;
     text-align: center;
@@ -210,6 +217,7 @@ body{
 
 .preco{
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -222,6 +230,11 @@ body{
     font-size: 10px;
     color: red;
     text-decoration: line-through;
+}
+
+.azul{
+    background-color: #0071e3;
+    height: 2px;
 }
 
 
