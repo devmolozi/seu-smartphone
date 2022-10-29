@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     text-decoration: none;
@@ -10,38 +10,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 #container{
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-    margin: auto;
+}
+
+#container2{
+    padding: 110px 80px;
 }
 
 
-
-.as{
+.a1{
+    margin-top: -10px;
+    margin-bottom: -10px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.a2{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 400;
     color: #0071e3;
 }
 
 h1{
-    font-size: 25px;
-    font-weight: 600;
-    padding: 20px;
+    font-size: 20px;
+    padding: 25px 0px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 body{
-    background-color: #f7f7f7;
+    background-color: #fbfbfb;
 }
 
 
 
-section{
-    padding: 110px 15px 15px 15px;
-}
 
 #produtos{
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
     flex-wrap: wrap;
     text-align: center;
+    align-items: center;
     justify-content: space-around;
     display: flex;
 }
@@ -50,22 +65,22 @@ section{
 
 .produto{
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     width: 220px;
     max-width: 250px ;
     color: rgb(0, 0, 0);
-    border-radius: 15px 15px 15px 15px;
-    padding: 5px;
+    padding: 0px;
+    object-position: center;
     justify-content: center;
-    margin: 5px;
     flex-wrap: wrap;
 }
 
 
 .produto img{
     padding: 0;
-    object-fit: contain;
-    width: 240px;
+    object-position: center;
+    object-fit: scale-down;
+    width: 210px;
     height: 240px;
 }
 
@@ -74,31 +89,52 @@ section{
 
 .produto p{
     font-size: 17px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 5px;
 }
 
-.produto h2{
-    font-size: 15px;
-    font-weight: 600;
+
+
+.aprod{
+    padding: 5px;
+    height: 20px;
+    margin-top: 0px;
 }
 
+.aprod a{
+    font-weight: 400;
+    font-size: 17px;
+    text-decoration: none;
+    color: #0071e3;
+}
 
+.aprod a:hover{
+    text-decoration: underline;
+}
 
 .produto button{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
     cursor: pointer;
+    display: inline-block;
     border: none;
     background-color: #0071e3;
     color: white;
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 80px;
 }
+
+
+
+    
 
 .produto button:hover{
     transition: 0.7s;
-    background-color: rgba(56, 56, 56, 0.932);
+    background-color: #0066cc;
  
 }
 
@@ -108,15 +144,16 @@ section{
 }
 
 #rodape h1{
+    font-weight: 400;
     padding: 10px 0px 0px 20px;
     font-size: 16px;
     text-align: center;
-    color: #333333;
+    color: #636373;
 }
 
 #rodape p{
     padding: 0px 0px 25px 5px;
-    color: #333333;
+    color: #636373;
 }
 
 #rodape a{
@@ -126,15 +163,19 @@ section{
 
 .title{
     height: 47px;
-    font-size: 16px;
     padding: 10px;
     margin-bottom: 5px;
+}
+
+.title h2{
+    font-size: 17px;
+    font-weight: 400;
 }
 
 #tt{
     margin-top: 45px;
     text-align: left;
-    padding: 10px 50px;
+    padding: 5px 0 0 80px;
 }
 
 #tt h1{
@@ -149,11 +190,16 @@ section{
     font-size: 18px;
 }
 
+#tt a:hover{
+    text-decoration: underline;
+}
+
 body{
     background-color: #fff;
 }
 
 .logoo img, span, a{
+
     cursor: pointer;
 }
 
@@ -164,23 +210,49 @@ body{
   
 }
 
+#container3 h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
 #outros{
+    text-align: center;
+    object-position: center;
+    margin-top: 10px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
 }
 
+#outros img{
+    border: 2px solid #2e2e2e;
+}
+
+#container3{
+    object-position: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
 #outros img:hover{
     transition: 0.3s;
-    border: 5px solid #0071e3c9;
+    border: 2px solid #5c5c5c;
 }
 
 #outros p{
-    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#outros img{
+    border-radius: 50%;
+    border: none;
+    width: 200px;
 }
 
 
-#acessorios-celular{
+/*#acessorios-celular{
+    object-position: center;
     align-items: center;
     text-align: center;
 }
@@ -196,9 +268,10 @@ body{
     font-weight: 500;
 }
 
-#perifericos-computador{
-    align-items: center;
-    text-align: center;
+
+#perifericos-computador p{
+    padding: 0;
+    margin: 0 10px 10px 0;
 }
 
 #perifericos-computador img{
@@ -210,31 +283,35 @@ body{
 #perifericos-computador p{
     font-weight: 500;
     font-size: 20px;
-}
+}*/
 
 
 /*FRMATACAO PRODUTOS*/
 
 .preco{
+    margin-top: 24px;
     display: flex;
+    font-weight: 400;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .preco p{
+    font-size: 14px;
     padding: 5px;
 }
 
 .risco{
     font-size: 10px;
     color: red;
+    font-weight: 600;
     text-decoration: line-through;
 }
 
 .azul{
-    background-color: #0071e3;
-    height: 2px;
+    background-color: #2e2e2e;
+    height: 3px;
 }
 
 
